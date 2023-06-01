@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Cabin:wght@500&family=Carter+One&family=Charm&family=Diplomata+SC&family=Fondamento&family=Henny+Penny&family=Josefin+Sans:ital,wght@1,500&family=Jost&family=Lobster&family=Lobster+Two:ital@1&family=Merienda:wght@300&family=Montserrat&family=Patrick+Hand&family=Patua+One&family=Poppins&family=Roboto&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@300&family=Rubik&family=Rubik+Moonrocks&family=Signika+Negative:wght@300&family=Slabo+27px&family=Sriracha&family=Staatliches&family=Tiro+Kannada&family=Ubuntu:wght@300&family=Xanh+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+       
+            <div id="container">
+                    <nav>
+                        <input type="search" id="search" placeholder="Search your city Eg. Delhi, Lucknow..">
+                        <i class="fa-solid fa-magnifying-glass" id="search_btn" onclick="checkweather()"></i>
+                    </nav>
+
+                    <div id="error">
+                        <h3>Invalid City Name</h3>
+                        <p>Please enter the valid city name.</p>
+                    </div>
+
+                    <div class="content" id="weather_content">
+                        <h1>Weather in <span id="city_name">Aligarh</span> </h1>
+                    <main>
+                        <div class="city">
+                            
+                            <div class="date">
+                                <p id="day">Sat</p>
+                                <p id="date">18-03-2023</p>
+                            </div>
+
+                        </div>
+                        
+                    </main>
+
+                    <div class="other_info">
+
+                        <div style="display: flex;align-items: center;margin-top: 40px;">
+                            <div style="display: flex;align-items: center;flex-direction: column;">
+                                <div  style="display: flex;align-items: center;">
+                                    <img src="Images/humidity.png" height="37px"><p id="humidity" style="color: aliceblue;margin-left: 10px; font-size: 32px;font-family: 'jost', sans-serif;font-weight: bold;">65%</p>
+                                </div>
+                                <p style="font-family: 'rubik', sans-serif;color: rgb(255, 255, 255);">Humidity</p>
+                            </div>
+
+                            <div style="display: flex;align-items: center;margin-left: 70px;flex-direction: column;">
+                                <div style="display: flex;align-items: center;">
+                                    <img src="Images/wind.png" height="43px"><p style="color: aliceblue;margin-left: 10px; font-size: 32px;font-family: 'jost', sans-serif;font-weight: bold;"><span id="wind" >18</span> <span style="font-size: 16px;"> km/h</span></p>
+                                </div>
+                                <p style="font-family: 'rubik', sans-serif;color: rgb(255, 255, 255);">Wind Speed</p>
+                            </div>
+                        </div>
+
+                        <div class="weather">
+                            <img src="Images/drizzle.png" id="img">
+                            <h2 id="temp">32° C</h2>
+                        </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+</body>
+<script src="script.js"></script>
+</html>
